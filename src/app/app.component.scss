@@ -1,0 +1,25 @@
+.grid-container {
+    height:100vh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main";
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgba(128, 215, 236, 0.933);
+    overflow: auto;
+    padding: 16px;
+}
